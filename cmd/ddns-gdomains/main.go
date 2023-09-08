@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"ddns-gdomains/internal/config"
+	"fmt"
+	"log"
+)
 
 func main() {
-	fmt.Println("hello-world")
+	cnf, err := config.New()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(cnf)
 }

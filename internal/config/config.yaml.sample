@@ -1,0 +1,4 @@
+google-domains:
+    user: username
+    password: password
+    hostname: hostname
